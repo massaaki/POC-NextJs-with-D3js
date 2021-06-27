@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 
 
 const CSSNameColorsSample = dynamic(() => import('../CSSNameColorsSample'), { ssr: false });
+const PopulationBarChartSample = dynamic(() => import('../PopulationBarChartSample'), { ssr: false });
 
 import styles from './styles.module.scss';
 
@@ -11,7 +12,8 @@ const HomePage = (): JSX.Element => {
 			<h1>
 				POC - D3 With Next
 			</h1>
-			<CSSNameColorsSample />
+			{/* <CSSNameColorsSample /> */}
+			<PopulationBarChartSample />
 		</div>
 	)
 }
