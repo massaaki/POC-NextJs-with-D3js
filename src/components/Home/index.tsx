@@ -1,4 +1,7 @@
-import { CSSNameColorsSample } from '../CSSNameColorsSample';
+import dynamic from 'next/dynamic';
+
+
+const CSSNameColorsSample = dynamic(() => import('../CSSNameColorsSample'), { ssr: false });
 
 import styles from './styles.module.scss';
 
