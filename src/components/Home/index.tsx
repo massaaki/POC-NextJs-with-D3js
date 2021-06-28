@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 const CSSNameColorsSample = dynamic(() => import('../CSSNameColorsSample'), { ssr: false });
 const PopulationBarChartSample = dynamic(() => import('../PopulationBarChartSample'), { ssr: false });
 const IrisScatterPlotSample = dynamic(() => import('../IrisScatterPlotSample'), { ssr: false });
+const TemperatureSample = dynamic(() => import('../TemperatureSample'), { ssr: false });
 
 import styles from './styles.module.scss';
 
@@ -16,6 +17,7 @@ const HomePage = (): JSX.Element => {
 			<CSSNameColorsSample />
 			<PopulationBarChartSample />
 			<IrisScatterPlotSample />
+			<TemperatureSample />
 		</div>
 	)
 }
