@@ -59,8 +59,7 @@ const BasicLineChart = (props: IBasicLineChartProps): JSX.Element => {
 				.append('path')
 				.datum(data)
 				.attr('fill', 'none')
-				// .attr('stroke', props.fill)
-				.attr('stroke', 'tomato')
+				.attr('stroke', props.fill)
 				.attr('stroke-width', 1.5)
 				.attr(
 					'd',
